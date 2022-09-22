@@ -6,19 +6,19 @@ def index(request):
     return render(request, 'index.html',{})
 
 def pages_blank(request):
-    return render(request, 'pages.blank.html', {})
+    return render(request, 'pages_blank.html', {})
 
 def pages_contact(request):
     return render(request, 'pages_contact.html', {})
 
 def pages_error(request):
-    return render(request, 'pages_error.html', {})
+    return render(request, 'pages_error_404.html', {})
 
 def pages_faq(request):
     return render(request, 'pages_faq.html', {})
 
 def pages_login(request):
-    return Render(request, 'pages_login.html', {})
+    return render(request, 'pages_login.html', {})
 
 def pages_register(request):
     return render(request, 'pages_register.html', {})
@@ -39,7 +39,7 @@ def charts_chartjs(request):
     return render(request, 'charts_chartjs.html', {})
 
 def charts_echarts(request):
-    return render(request, 'charts_echarts,html', {})
+    return render(request, 'charts_echarts.html', {})
 
 def components_accordion(request):
     return render(request, 'components_accordion.html', {})
@@ -99,7 +99,7 @@ def icons_bootstrap(request):
     return render(request, 'icons_bootstrap.html', {})
 
 def icons_boxicons(request):
-    return render(request, 'icons_bootstrap,html',{})
+    return render(request, 'icons_bootstrap.html',{})
 
 def icons_remix(request):
     return render(request, 'icons_remix.html', {})
